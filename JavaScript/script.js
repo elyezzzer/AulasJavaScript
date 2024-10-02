@@ -26,3 +26,11 @@ let cores = ["Vermelho", "Azul", "Laranja"];
 let nome = "Elyezer";
 let message = "Olá " + nome + " seja bem vindo!";
 console.log(message);
+
+//conversao de tipos
+
+let numero = 100;
+let numeroConvertido = String(numero);
+
+let str = "123";
+let strConvertido = Number(str);
