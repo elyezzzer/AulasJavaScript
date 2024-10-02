@@ -1,40 +1,30 @@
-//operadores aritimeticos
-let x = 10;
-let y = 5;
-
-let soma = x + y;
-let subtracao = x - y;
-let multiplicacao = x * y;
-let divisao = x / y;
-let resto = x % y;
-
-console.log("A soma é: ",soma);
-
-//operadores de atribuicao
-let a = 10;
-let somaX = a + 5;
-a += 5;
-
-//operadores de comparacao
-let time = "Santos";
-let maiorTime = time == "Santos";
-console.log(time);
-
-//estruturas condicionais
-const idade = 18;
+/*let idade = prompt("Digite sua idade: ")
 if (idade>=18){
-    console.log("Você é de maior.");
+    console.log("Você é de maior");
 } else {
     console.log("Você é de menor");
-}
+} */
 
-//estruturas de repeticao
-for (let i=1;i < 6;i++){
-    let total = 5 * i;
-    console.log("5 x "+ i +"="+ total);
-}
+/*let numero = prompt("Digite um número:")
+if (numero % 2 == 0){
+    console.log("Par");
+} else {
+    console.log("Impar");
+} */
 
-let contador = 10;
-while (contador <= 10){
-    
+/*let numero = prompt("Digite um número: ")
+if (numero != 0){
+    if (numero >0){
+        console.log("Positivo");
+    } else {
+        console.log("Negativo")
+    }
+} else {
+    console.log("Zero");
+} */
+
+let tabuada = prompt("Digite o número da tabuada que quer ver: ");
+for (let i=1; i<11; i++){
+    let resultado=tabuada*i;
+    console.log(tabuada + "x" + i + "=" + resultado);
 }
