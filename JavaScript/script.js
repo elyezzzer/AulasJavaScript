@@ -7,7 +7,7 @@ if (idade>=18){
 } */
 
 //Exercicio 02
-let numero = prompt("Digite um número:")
+/*let numero = prompt("Digite um número:")
 function verificaParOuImpar(numero){
     if (numero % 2 == 0){
         console.log("Par");
@@ -15,7 +15,7 @@ function verificaParOuImpar(numero){
         console.log("Impar");
     } 
 }
-verificaParOuImpar(numero);
+verificaParOuImpar(numero); */
 
 //Exercicio 03
 /*let numero = prompt("Digite um número: ")
@@ -30,8 +30,11 @@ if (numero != 0){
 } */
 
 //Exercicio 04
-/*let tabuada = prompt("Digite o número da tabuada que quer ver: ");
-for (let i=1; i<11; i++){
-    let resultado=tabuada*i;
-    console.log(tabuada + "x" + i + "=" + resultado);
-} */
+let numero = prompt("Digite o número da tabuada que quer ver: ");
+function tabuada(numero){
+    for (let i=1; i<11; i++){
+        let resultado=numero*i;
+        console.log(numero + "x" + i + "=" + resultado);
+    } 
+}
+tabuada(numero);
