@@ -1,33 +1,33 @@
-function calculadora(n1,n2,operacao){
-    if(operacao == "soma"){
-        return soma(n1,n2)
-    }
-    if(operacao == "subtracao"){
-        return subtracao(n1,n2)
-    }
-    if(operacao == "multiplicacao"){
-        return multiplicacao(n1,n2)
-    }
-    if(operacao == "divisao"){
-        return divisao(n1,n2)
-    }
-    return "Operação Inválida";
-}
-function soma(n1,n2){
-    return n1+n2;
-}
-function subtracao(n1,n2){
-    return n1-n2;
-}
-function multiplicacao(n1,n2){
-    return n1*n2;
-}
-function divisao(n1,n2){
-    return n1/n2;
+//Seletor de elemento por ID
+function puxarElementoPorId(){
+    const titulo = document.getElementById('meuTitulo');
+    titulo.textContent = "Titulo Alterado";
 }
 
-console.log(calculadora(10,10,"erro"));
-console.log(calculadora(10,10,"soma"));
-console.log(calculadora(10,10,"subtracao"));
-console.log(calculadora(10,10,"multiplicacao"));
-console.log(calculadora(10,10,"divisao"));
+function puxarElementoPorClasse(){
+    const subtitulo = document.getElementsByClassName('subtitulo');
+    console.log(subtitulo);
+}
+
+function puxarElementoPorTag(){
+    const paragrafos = document.getElementsByTagName('p');
+    console.log(paragrafos);
+}
+
+//funcao para criar a lista
+function criarLista(){
+    const container = document.getElementById('lista-container');
+    container.innerHTML =
+    `
+     <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    `;
+}
+
+function removerLista(){
+    const container = document.getElementById('lista-container');
+    container.innerHTML = '';
+}
