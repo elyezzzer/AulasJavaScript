@@ -1,40 +1,31 @@
-//Exercicio 01
-/*let idade = prompt("Digite sua idade: ")
-if (idade>=18){
-    console.log("Você é de maior");
-} else {
-    console.log("Você é de menor");
-} */
-
-//Exercicio 02
-/*let numero = prompt("Digite um número:")
-function verificaParOuImpar(numero){
-    if (numero % 2 == 0){
-        console.log("Par");
-    } else {
-        console.log("Impar");
-    } 
+// Função simples
+function exibirBoasVindas(){
+    return console.log("Olá, seja bem vindo!");
 }
-verificaParOuImpar(numero); */
+exibirBoasVindas();
 
-//Exercicio 03
-/*let numero = prompt("Digite um número: ")
-if (numero != 0){
-    if (numero >0){
-        console.log("Positivo");
-    } else {
-        console.log("Negativo")
-    }
-} else {
-    console.log("Zero");
-} */
-
-//Exercicio 04
-let numero = prompt("Digite o número da tabuada que quer ver: ");
-function tabuada(numero){
-    for (let i=1; i<11; i++){
-        let resultado=numero*i;
-        console.log(numero + "x" + i + "=" + resultado);
-    } 
+//Função com parâmetros
+function soma(a, b, c){
+    const total = a + b + c;
+    return console.log("Total soma: ", total);
 }
-tabuada(numero);
+soma(10,20,30);
+
+//Função anônima
+const multiplicar = function(x, y){
+    return console.log("Multiplicação: ", x * y);
+}
+multiplicar(3,5);
+
+//Função arrow function
+const dividir = (a, b) => a / b;
+console.log("Divisão: ", dividir(10,2));
+
+//Função de callback
+function inicializarProjeto(){
+    exibirBoasVindas();
+    soma(40, 50, 10);
+    multiplicar(10,6);
+    dividir(20,2);
+}
+inicializarProjeto();
